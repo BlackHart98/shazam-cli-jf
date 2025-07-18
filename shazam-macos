@@ -74,7 +74,6 @@ record() {
 }
 
 query() {
-    # base64 $AUDIO_FILE >$AUDIO_B64_FILE
     base64 -i $AUDIO_FILE -o $AUDIO_B64_FILE
     curl --silent -X POST \
         'https://shazam.p.rapidapi.com/songs/v2/detect' \
