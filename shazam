@@ -3,7 +3,7 @@
 # Use https://rapidapi.com/apidojo/api/shazam/ to detect audio currently playing through audio source.
 # Requires curl, ffmpeg
 
-TMP_DIR="/tmp/shazam"
+TMP_DIR="./tmp/shazam"
 [ ! -d "$TMP_DIR" ] && mkdir "$TMP_DIR"
 AUDIO_FILE="$TMP_DIR/recording.dat"
 AUDIO_B64_FILE="$TMP_DIR/recording_b64.dat"
